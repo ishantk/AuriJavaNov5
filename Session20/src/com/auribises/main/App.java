@@ -4,12 +4,13 @@ import java.util.ArrayList;
 
 import com.auribises.db.JDBCHelper;
 import com.auribises.model.User;
+import com.auribises.view.RegisterUserGUI;
 
 public class App {
 
 	public static void main(String[] args) {
 		
-		User uRef1 = new User();
+		/*User uRef1 = new User();
 		uRef1.setUid(0);
 		uRef1.setName("Kim");
 		uRef1.setEmail("kim@example.com");
@@ -19,7 +20,7 @@ public class App {
 		User uRef2 = new User(7, "Harry Watson", "harry@example.com", 55, "harry123");
 		
 		System.out.println(uRef1);
-		System.out.println(uRef2);
+		System.out.println(uRef2);*/
 		
 		// Object contains data and Object is in RAM
 		// Hence, data is temporary !!
@@ -28,7 +29,7 @@ public class App {
 		// 2. Database
 
 		
-		JDBCHelper helper = new JDBCHelper();
+		/*JDBCHelper helper = new JDBCHelper();
 		helper.createConenction();
 		//helper.insertUserInDB(uRef1);
 		//helper.insertUserInDB(uRef2);
@@ -45,8 +46,10 @@ public class App {
 		}
 		
 		
-		helper.closeConnection();
+		helper.closeConnection();*/
 		
+		RegisterUserGUI gui = new RegisterUserGUI();
+		gui.showGUI();
 		
 	}
 
